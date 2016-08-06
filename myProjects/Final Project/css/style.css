@@ -1,0 +1,73 @@
+body{
+    background-color:#eee;
+    padding:0;
+    margin: 0 auto;
+    font-size:20px;
+    width:100%;
+    color:#fff;
+}
+
+.header{
+    background-image: url('../images/shuttlepro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:850px;
+    position:relative;
+}
+
+.topBar{
+    background-color:black;
+    height:80px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#myName{
+    float:left;
+    margin:1% 0 0 2%;
+}
+
+nav{
+    float:right;
+    margin: 1% 0 0 2%;
+}
+nav ul li{
+    display:inline;
+    margin-right:50px;
+
+}
+
+#skills{
+    clear:both;
+    background-color:white;
+    height:500px;
+    text-align: center;
+    color:black;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#aboutMe{
+    background-image: url('../images/space2.jpg'); 
+    height:500px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+    text-align: left;
+    color:#fff;
+    overflow: hidden;
+}
+
+#aboutMe p{
+    width:30%;
+    margin-left:50px;
+}
+
+#contactMe{
+    background-color:black;
+    height:300px;
+    overflow: hidden;
+}
+
+
+
