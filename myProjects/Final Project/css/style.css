@@ -14,6 +14,15 @@ body {
 a {
   text-decoration: none;
 }
+
+.hide{
+  display:none;
+}
+
+.unhide{
+  display:unset;
+}
+
 /* GLOABAL STYLES END*/
 
 /* START OF MOBILE*/
@@ -137,7 +146,7 @@ a {
 
 .skill{
   height:75px;
-  text-align:center;
+  text-align:left;
   background:#383838;
   transition: all .2s ease;
 }
@@ -147,9 +156,12 @@ a {
   margin:0;
 }
 
+
 .skill:hover{
   height:200px;
   transform: scale(.98);
+  border:1px solid black;
+  background-color:#282828;
 }
 
 #space{
@@ -163,5 +175,58 @@ a {
   padding-top:50px;
   height:325px;
 }
+#typed{
+  white-space:pre;
+  text-align: left;
+  color:lightblue;
+  font-size:1.5em;
+}
+
+#css{
+  transition: background-color .2s ease;
+  transition: rotate .2s ease;
+}
+
+#css:hover{
+  background:#3F88C5;
+  color:#383838;
+  transform: rotate('360deg');
+}
+
+#responsive:hover{
+  background-image: url(../images/responsive-design.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+#github:hover{
+  background-image:url(../images/octocat.jpg);
+  background-size:cover;
+  background-position:center;
+}
 
 /* END OF SKILL BOXES*/
+
+/* TYPED.JS*/
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
