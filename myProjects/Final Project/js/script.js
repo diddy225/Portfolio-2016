@@ -3,6 +3,7 @@
 $(document).ready(function(){
     //HEADER//
     $(document).on('scroll', toggleSize);
+    $(document).on('scroll', hideHeader);
     //END OF HEADER//
 
     //SKILL BOXES//
@@ -17,6 +18,7 @@ $(document).ready(function(){
     //END OF SKILL BOXES//
     
 });
+
    //MAIN HEADER// 
 function toggleSize(){
     if ($(window).scrollTop() > 10){
@@ -24,16 +26,25 @@ function toggleSize(){
         $('#title').slideUp(0);
         $('#name').css('display', 'unset');
         $('#name').fadeIn(50);
-       
-    }
-    else{
-        $('.main-header').animate( { height:"450px" }, { duration:0 });
-         $('#name').fadeOut(50);
-         $('#name').css('display', 'none');
-         $('#title').fadeIn(50);
-         $('#title').slideDown(0);
+        $('.main-header').css('background-color', 'transparent');
     }
 
+    else {
+        $('.main-header').animate( { height:"326px" }, { duration:0 });
+        $('#name').fadeOut(50);
+        $('#name').css('display', 'none');
+        $('#title').fadeIn(50);
+        $('#title').slideDown(0);
+        $('.main-header').css('background-color', '#3F88C5');
+    }
+}
+function hideHeader(){
+    if ($(window).scrollTop() > 260){
+        $('.main-header').slideUp(50);
+    }
+    else {
+        $('.main-header').slideDown(50);
+    }
 }
   //END OF MAIN HEADER//
 
