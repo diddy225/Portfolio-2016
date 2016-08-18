@@ -23,14 +23,14 @@ function toggleSize(){
         $('.main-header').animate( { height:"70px" }, { duration:0 });
         $('#title').slideUp(0);
         $('#name').css('display', 'unset');
-        $('#name').fadeIn(100);
+        $('#name').fadeIn(50);
        
     }
     else{
         $('.main-header').animate( { height:"450px" }, { duration:0 });
-         $('#name').fadeOut(100);
+         $('#name').fadeOut(50);
          $('#name').css('display', 'none');
-         $('#title').fadeIn(400);
+         $('#title').fadeIn(50);
          $('#title').slideDown(0);
     }
 
