@@ -31,7 +31,7 @@ function toggleSize(){
          $('#name').fadeOut(100);
          $('#name').css('display', 'none');
          $('#title').fadeIn(400);
-         $('#title').slideDown(300);
+         $('#title').slideDown(0);
     }
 
 }
