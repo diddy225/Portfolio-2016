@@ -228,7 +228,7 @@ a {
 #about img{
   margin-top:50px;
   padding:20px;
-  width:50%;
+  width: 50%;
   float:right;
 }
 
@@ -236,6 +236,34 @@ a {
 
 /*START OF WORK SECTION*/
 
+.sites h1{
+  color:#fff;
+  text-shadow:2px 2px 8px #333333;
+}
+
+#foodSite{
+  background-image: url(../images/foodsite.png);
+  background-position: center;
+  background-size:cover;
+}
+
+#musicSite{
+  background-image: url(../images/musicsite.png);
+  background-position: center;
+  background-size:cover;
+}
+
+#pictureSite{
+  background-image: url(../images/picturesite.png);
+  background-position: center;
+  background-size:cover;
+}
+
+#techSite{
+  background-image: url(../images/techsite.png);
+  background-position: center;
+  background-size:cover;
+}
 
 /* END OF WORK SECTION*/
 
@@ -243,12 +271,47 @@ a {
 
 .footer{
   background-color:#3B3B3B;
-  height:350px;
+  height:450px;
   color:white;
 }
 
 #contact{
   overflow:hidden;
+}
+
+form{
+  margin:10px;
+}
+
+form h4{
+  margin-left:10px;
+  margin-bottom:0;
+  font-size:2em;
+  color:#3F88C5;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+input{
+  border:none;
+  border-bottom:2px solid #3F88C5;
+  background:transparent;
+  height:30px;
+  margin:10px;
+  width:40%;
+}
+
+input, select, textarea{
+  color:#fff;
+}
+
+button{
+  width:40.2%;
+  margin-top:20px;
+  margin-left:10px;
+  border-radius:20px;
+  background-color:#3F88C5;
+  border:none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 
