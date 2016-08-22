@@ -2,101 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Matthew Carpenter Sr.</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <title>Matthew Carpenter</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
-<nav class="main-nav" id="main-nav">
-  <a href="#space">SKILLS</a>
-  <a href="#about">ABOUT</a>
-  <a href="#work">WORK</a>
-  <a href="#contact">CONTACT</a>
-</nav>
-<!-- HEADER -->
-<div class="page-wrap">
-  <header class="main-header">
-    <p id="name">Matthew Carpenter Sr.<br/><span id="smaller"> Front End Web Developer</span></p>
-    <a href="#main-nav" class="open-menu">☰</a>
-    <a href="#" class="close-menu">☰</a>
-    
-  </header>
-<!--END OF HEADER-->
-<div id="space" class="container">
-  <!-- SKILL BOXES-->
-  <div id="html" class="skill">
-    <h1 id="bumpRight">HTML</h1>
-    <div id="typed"></div>
-  </div>
-  
-  <div id="css" class="skill">
-    <h1>CSS</h1>
-  </div>
-  
-  <div id="javaScript" class="skill">
-    <h1>JavaScript</h1>
-  </div>
-  
-  <div id="responsive" class="skill">
-    <h1>Responsive Design</h1>
-  </div>
-  
-  <div id="github" class="skill">
-    <h1>Github</h1>
-  </div>
-</div>
-<!--END OF SKILL BOXES-->
+    <!--my spinning logo-->
+    <div id="circle">
+        <span id="rotate">MC</span>
+    </div>
+    <!--my spinning logo end-->
 
-<!--ABOUT-->
-<div id="about" class="container">
-  <div id="aboutMe">
-    <h3>SKILLS & EXPERTISE</h3>
-    <p>My name is Matthew Carpenter. I'm a Front-End Web Developer, based in Atlanta,Ga.<br/>
-       I enjoy designing websites!   
-    </p>
-  </div>
-</div>
+    <header>
+        <div id="hamburger">
+             
+        </div>
+        <nav>
+            <ul id="links">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Resume</li></a>
+                <a href="#"><li>Skills</li></a>
+                <a href="#"><li>Projects</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </header>
 
-<div id="work" class="container">
-  <a href="#"><div id="musicSite" class="skill sites"></div></a>
-  <a href="#"><div id="foodSite" class="skill sites"></div></a>
-  <a href="#"><div id="techSite" class="skill sites"></div></a>
-  <a href="#"><div id="pictureSite" class="skill sites"></div></a>
-</div>
+    <section class="jumbotron">
 
-<div class="footer">
-  <div id="contact">
-  <div id="pictureDiv">
-    <img src="images/me.jpg" alt="">
-  </div>
-  <h4 id="contactHeader">Contact Me</h4>
-  <form action="" method="GET">
-    <input type="text" placeholder="First Name"><br/>
-    <input type="text" placeholder="Last Name"><br/>
-    <input type="email" placeholder="Email"><br/>
-    <input type="tel" placeholder="Phone Number"><br/>
-    <button>Submit</button>
-  </form>
-  <div id="socialLinks">
-    <ul id="icons">
-      <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-      <li><i class="fa fa-github-alt" aria-hidden="true"></i></li>
-      <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-      <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-      <li><i class="fa fa-slack" aria-hidden="true"></i></li>
-    </ul>
-  </div>
-</div>
 
-</div>
+    </section>
 
-</div>
+    <section class="skill container">
+        <p class="designBox"><span id="bigger">DEVELOPER.</span><br/><br/>Hello, my name is Matthew Carpenter I currently reside in Atlanta, Ga,
+        and I am a recent graduate of General Assembly (GA). GA taught me the skills needed to become a highly effective Front End Web Developer.
+        My skills include HTML, CSS, JavaScript and jQurery. Some of the tools I use include GIT, Responsive Design, and Firebase. I am a husband
+        and a father to two beautiful children. I enjoy working out in my spare time and gaming in my spare time.</p>
+        <div class="skillsBox">
+            <div id="HTML" class="imgBox">
+                <img src="images/html5.png" height="150px" alt="HTML5 SHIELD">
+            </div>
+            <div id="Javascript" class="imgBox">
+                <img src="images/jslogo.png" height="200px" alt="JS SHIELD">
+            </div>
+            <div id="CSS" class="imgBox">
+                <img src="images/css3.png"  height="160px" alt="CSS SHIELD">
+            </div>
+        </div>
+    </section>
+
+    <section class="background">
+        <div class="projectsBackground">
+            <ul id="tools">
+                <h1>EAT.</h1>
+                <h1>SLEEP.</h1>
+                <h1>CODE.</h1>
+            </ul>
+        </div>
+    </section>
+    <section class="sampleSites">
+        <div id="sampleBox">
+            <div id="site1">
+                <img src="images/foodsite.png" height='150' alt="Food Site">
+            </div>
+            <div id="site2">
+                <img src="images/musicsite.png" height='150' alt="Music Site">
+            </div>
+            <div id="site3">
+                <img src="images/picturesite.png" height='150' alt="Picture Site">
+            </div>
+            <div id="site4">
+                <img src="images/techsite.png" height='150' alt="Tech Site">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="myPicture"></div>
+        <p id="comment">Let's get in touch!</p>    
+        <form action="" method="POST">
+            <input type="text" placeholder="Full Name"><br/>
+            <input type="email" placeholder="Enter Email"><br/>
+            <input type="tel" placeholder="Phone Number"><br/>
+            <textarea name="comment" id="commentBox" form="usrform" cols="30" rows="10" placeholder="Comment"></textarea>
+        </form>
+        <div id="socialMedia">
+            
+        </div>
+    </footer>
+   <script src="scripts/main.js"></script>
 </body>
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="js/typed.js"></script>
-<script src="js/script.js"></script>
 </html>
-
-

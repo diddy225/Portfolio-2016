@@ -1,0 +1,260 @@
+body{
+    padding:0;
+    margin:0 auto;
+    width:100%;
+}
+
+input:focus{
+    outline:none;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 2px;
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.5);
+    height:40px;
+    width:100%;
+    position:fixed; 
+    z-index: 10000;
+}
+
+nav ul{
+    margin-right:40%;
+}
+
+#links li{
+    float:left;
+    list-style: none;
+    margin-right:5%;
+    font-size:.7em;
+}
+
+#links a:hover{
+    color:#000;
+}
+
+section.jumbotron{
+    background-image:url(../images/city.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:750px;
+}
+
+/* SPINNING LOGO */
+
+#circle{
+  position: absolute;
+  border:10px solid rgba(0, 0, 0, 0.5);
+  height:425px;
+  border-radius:425px;
+  width:425px;
+  left:35%;
+  top:15%;
+}
+
+#rotate{
+  /*color:rgba(221, 201, 126, 1);*/
+  color:rgba(0, 0, 0, 0.5);
+  position:absolute;
+  left:10%;
+  top:70px;
+  font-size:15em;
+  animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate{
+  from{
+   transform:rotateY(360deg);
+  }
+}
+
+/* SPINNING LOGO END*/
+
+/* SKILL BOXES*/
+
+.skill{
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-align: left;
+    height:650px;
+}
+
+.skillsBox{
+    margin-top:80px;
+    display:flex;
+    flex-direction: column;
+    float:right;
+    margin-right:150px;
+}
+
+.designBox{
+    float:left;
+    margin-left:150px;
+    margin-top:150px;
+    word-wrap: break-word;
+    width:40%;
+}
+
+#bigger{
+    font-size:3em;
+}
+
+/* END SKILL BOXES*/
+
+/* JUST A BACKGROUND*/
+
+.background{
+    background-image: url(../images/laptop.jpg);
+    background-blend-mode: normal;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height:600px;
+    overflow:hidden;
+}
+
+#tools h1{ 
+    color:rgba(0, 0, 0, 0.5);
+    font-size:5.5em;
+    list-style: none;
+}
+
+#tools h1:nth-child(2){
+    margin-left:50px;
+}
+
+#tools h1:last-child{
+    margin-left:200px;
+}
+/* JUST A BACKGROUND END*/
+
+/* SAMPLE SITES*/
+.sampleSites{
+    z-index: 20000;
+    height:400px;
+}
+
+#sampleBox{
+    display:flex;
+    flex-direction: row;
+}
+
+#site1{
+    top:25px;
+    left:200px;
+    float:left;
+    position:relative;
+    transition: all .5s linear;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#site1:hover{
+    z-index: 20000;
+    transform: scale(1.5);  
+}
+
+#site2{
+    top:200px;
+    right:150px;
+    float:left;
+    position:relative;
+    transition: all .5s linear;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#site2:hover{
+    z-index: 20000;
+    transform: scale(1.5);  
+}
+
+#site3{
+    top:25px;
+    left:150px;
+    float:right;
+    position:relative;
+    transition: all .5s linear;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#site3:hover{
+    z-index: 20000;
+    transform: scale(1.5);  
+}
+
+#site4{
+    right:200px;
+    top:200px;
+    float:right;
+    position:relative;
+    transition: all .5s linear;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#site4:hover{
+     z-index: 20000;
+     transform: scale(1.5);  
+}
+
+/* SAMPLE SITE END */
+
+/* FOOTER */
+#myPicture{
+    background-image: url(../images/me.JPG);
+    background-position:center;
+    background-size: cover;
+    height:60px;
+    border-radius:60px;
+    width:60px;
+    position:relative;
+    left:60px;
+    top:20px;
+}   
+
+#comment{
+    color:#fff;
+    margin: -28px 0 0 130px;
+    font-size:2em;
+}
+
+
+footer{
+    height:375px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+form{
+    margin-left: 50px;
+}
+
+
+input:first-child{
+    margin-top:40px;
+}
+
+#commentBox{
+    width:29.7%;
+    height:125px;
+    border:1px solid #fff;
+    color:#000;
+}
+
+input{
+    color:white;
+    border:none;
+    border-bottom:1px solid #fff;
+    color:#000;
+    margin-bottom:20px;
+    width:30%;
+}
+
+
