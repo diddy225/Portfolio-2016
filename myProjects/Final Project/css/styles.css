@@ -327,12 +327,12 @@ a {
 
 #hamburger li{
     transform: rotate(90deg);
-    margin-top: -35px;
+    margin-top: -30px;
 }
 
 nav{
     background-color:rgba(0, 0, 0, 0.5);
-    height:42px;
+    height:60px;
     width:100%;
     position:fixed;
     z-index: 10000;
@@ -340,8 +340,8 @@ nav{
 }
 
 .expandNav{
-    transition:all .49s;
-    height:300px;
+    transition:all .1s;
+    height:500px;
 }
 
 
@@ -362,13 +362,14 @@ nav #mobileLinks{
 }
 
 #mobileLinks li{
-    display:none;
+   visibility: hidden;
 }
 
 #mobileLinks li{
-    letter-spacing: 115%;
+    letter-spacing: 20px;
     list-style: none;
     margin-left:3%;
+    font-size:4vw;
 }
 
 section.jumbotron{
@@ -552,7 +553,7 @@ section.jumbotron{
 
 
 footer{
-    height:400px;
+    height:380px;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -577,7 +578,7 @@ input{
     color:white;
     border:none;
     border-bottom:2px solid #fff;
-    margin-bottom:20px;
+    margin-bottom:15px;
     width:36%;
     background:none;
 }

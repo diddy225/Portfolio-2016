@@ -10,10 +10,10 @@ $(document).ready(function(){
 function windowSlideDown(){
     if(isOpen){
         $('nav').addClass('expandNav');
-        $('#mobileLinks a').show(0);
+        $('#mobileLinks li').css('visibility', 'visible');
     }else{
         $('nav').removeClass('expandNav');
-        $('#mobileLinks a').hide(0);
+        $('#mobileLinks li').css('visibility', 'hidden');
     }
     isOpen = !isOpen;
 };
