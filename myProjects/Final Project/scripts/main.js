@@ -21,7 +21,7 @@ function windowSlideDown(){
 
 
 function unhideHeader(){
-    if ($(window).scrollTop() > 900){
+    if ($(window).scrollTop() < 950){
         $('#site1').css('margin-top', '-63px');
     }
     else {
