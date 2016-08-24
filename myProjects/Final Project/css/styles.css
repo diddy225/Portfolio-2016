@@ -1,5 +1,4 @@
-/******** DESKTOP SITE *********/
-
+                    /******** DESKTOP SITE *********/
 body{
     padding:0;
     margin:0 auto;
@@ -28,7 +27,7 @@ nav{
     z-index: 100000;
 }
 
-nav ul{
+nav #links{
     margin-right:40%;
 }
 
@@ -37,6 +36,10 @@ nav ul{
     list-style: none;
     margin-right:5%;
     font-size:.7em;
+}
+
+nav #mobileLinks{
+    display:none;
 }
 
 #links a:hover{
@@ -57,23 +60,13 @@ section.jumbotron{
 }
 /* SPINNING LOGO */
 
-#circle{
-    position: absolute;
-    border: 10px solid rgba(0, 0, 0, 0.5);
-    height: 624px;
-    border-radius: 625px;
-    width: 625px;
-    left: 26%;
-    top: 8%;
-}
-
 #rotate{
   /*color:rgba(221, 201, 126, 1);*/
   color:rgba(0, 0, 0, 0.5);
   position:absolute;
-  left: 3%;
+  left: 30%;
   top: 97px;
-  font-size: 24em;
+  font-size: 28vw;
   animation: rotate 7s linear infinite;
 }
 
@@ -94,8 +87,9 @@ section.jumbotron{
     height:650px;
 }
 
-.skillsBox{
-    float:right;
+.skillsBox{ 
+    margin-top:70px;
+    margin-left:300px
 }
 
 #HTML{
@@ -103,8 +97,8 @@ section.jumbotron{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/html5.png);
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 134px;
 }
 
 #javascript{
@@ -121,21 +115,22 @@ section.jumbotron{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/css3.png);
-    height: 130px;
-    width: 118px;
+    height: 155px;
+    width: 130px;
 
 }
 
 .designBox{
-    float:left;
-    margin-left:200px;
+    float:right;
     margin-top:150px;
+    margin-right:10%;
     word-wrap: break-word;
-    width:40%;
+    width:35%;
+    line-height:170%;
 }
 
 #bigger{
-    font-size:2.5em;
+    font-size:2.2em;
 }
 
 /* END SKILL BOXES*/
@@ -265,7 +260,7 @@ input:first-child{
 
 #commentBox{
     border-radius:5px;
-    width:29.7%;
+    width:36%;
     height:125px;
     border:1px solid #fff;
     color:#000;
@@ -274,13 +269,14 @@ input:first-child{
 input{
     color:white;
     border:none;
-    border-bottom:1px solid #fff;
+    border-bottom:2px solid #fff;
     margin-bottom:20px;
-    width:30%;
+    width:36%;
     background:none;
 }
 
-/******** DESKTOP SITE END *********/
+
+                /******** DESKTOP SITE *********/
 
 
 
@@ -292,7 +288,9 @@ input{
 
 
 
-/********** MOBILE SITE ***********/
+
+
+                    /********** MOBILE SITE ***********/
 
 @media only screen 
   and (min-device-width: 320px) 
@@ -314,42 +312,63 @@ a {
     letter-spacing: 2px;
 }
 
-#hamburger{
+
+#hamburger {
     display:unset;
+    list-style: none;
+    font-size:4vw;
+    position:relative;
+    width:0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 47%;
+    margin-top: 2%;
 }
 
-#hamburger p{
-    font-size:2.5em;
-    text-shadow:1px 1px 5px #000;
-    color:rgba(255, 200, 0, 0.8);
-    margin:0 auto;
-    padding-left:48%;
-    margin-bottom:1%;
+#hamburger li{
     transform: rotate(90deg);
+    margin-top: -35px;
 }
 
 nav{
     background-color:rgba(0, 0, 0, 0.5);
-    height:40px;
+    height:42px;
     width:100%;
-    position:fixed; 
+    position:fixed;
     z-index: 10000;
+    transition:all 1s;
 }
+
+.expandNav{
+    transition:all .49s;
+    height:300px;
+}
+
 
 nav ul{
+    display:flex;
+    flex-direction: column;
+    margin-left:44%;
+    margin-top:-44px;
+}
+
+#links li{   /* hidden desktop links */
     display:none;
-    margin-right:40%;
 }
 
-#links li{
-    float:left;
+nav #mobileLinks{
+    text-align: center;
+    display:unset;
+}
+
+#mobileLinks li{
+    display:none;
+}
+
+#mobileLinks li{
+    letter-spacing: 115%;
     list-style: none;
-    margin-right:5%;
-    font-size:.7em;
-}
-
-#links a:hover{
-    color:#000;
+    margin-left:3%;
 }
 
 section.jumbotron{
@@ -378,8 +397,9 @@ section.jumbotron{
     height:650px;
 }
 
-.skillsBox{
-
+.skillsBox{ 
+    margin-top:100px;
+    margin-left:300px
 }
 
 #HTML{
@@ -387,8 +407,8 @@ section.jumbotron{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/html5.png);
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 134px;
 }
 
 #javascript{
@@ -405,22 +425,24 @@ section.jumbotron{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/css3.png);
-    height: 130px;
-    width: 118px;
+    height: 155px;
+    width: 130px;
 
 }
 
 .designBox{
-    float:left;
-    margin-left:200px;
-    margin-top:150px;
+    float:right;
+    margin-top:120px;
+    margin-right:10%;
     word-wrap: break-word;
-    width:40%;
+    width:35%;
+    line-height:170%;
 }
 
 #bigger{
     font-size:2.5em;
 }
+
 
 /* END SKILL BOXES*/
 
@@ -545,7 +567,7 @@ input:first-child{
 
 #commentBox{
     border-radius:5px;
-    width:29.7%;
+    width:36%;
     height:125px;
     border:1px solid #fff;
     color:#000;
@@ -554,9 +576,9 @@ input:first-child{
 input{
     color:white;
     border:none;
-    border-bottom:1px solid #fff;
+    border-bottom:2px solid #fff;
     margin-bottom:20px;
-    width:30%;
+    width:36%;
     background:none;
 }
     }
