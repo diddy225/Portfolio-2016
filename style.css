@@ -1,0 +1,15 @@
+body{
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    margin:0 auto;
+    padding:0;
+}
+h1{
+    margin-bottom:100px;
+}
+
+img:hover{
+    border:1px solid #f00;
+    transform: scale(1.2);
+}
