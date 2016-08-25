@@ -35,7 +35,7 @@ nav #links{
     float:left;
     list-style: none;
     margin-right:5%;
-    font-size:.7em;
+    font-size:.9em;
 }
 
 nav #mobileLinks{
@@ -43,7 +43,11 @@ nav #mobileLinks{
 }
 
 #links a:hover{
-    color:#000;
+    color:#f00;
+}
+
+#links #selected{
+    color:#f00;
 }
 
 section.jumbotron{
@@ -61,13 +65,13 @@ section.jumbotron{
 /* SPINNING LOGO */
 
 #rotate{
-  /*color:rgba(221, 201, 126, 1);*/
-  color:rgba(0, 0, 0, 0.5);
+  color:transparent;
   position:absolute;
   left: 30%;
   top: 97px;
   font-size: 28vw;
-  animation: rotate 7s linear infinite;
+  -webkit-text-stroke: 5px rgba(0, 0, 0, 0.8);
+  animation: rotate 14s linear infinite;
 }
 
 @keyframes rotate{
@@ -178,21 +182,9 @@ section.jumbotron{
      width:100%;
      transform: scale(1.05);  
 }
-#sampleBox #mobile{
-    display:none;
-}
 
-#sampleBox #desktop{
-    position:relative;
-    transform: rotate(270deg);
-    height:0;
-    font-size:5vw;
-    margin: 272px 0 0 -179px;
-    color:rgba(0, 0, 0, 0.5);
-    letter-spacing: 6px;
-}
 
-#site1{
+#foodSite{
     margin-top:60px;
     background-image:url(../images/foodsite.png);
     background-position:center;
@@ -203,7 +195,7 @@ section.jumbotron{
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-#site2{
+#pictureSite{
     margin-top:60px;
     background-image:url(../images/picturesite.png);
     background-position:center;
@@ -214,7 +206,7 @@ section.jumbotron{
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-#site3{
+#musicSite{
     margin-top:60px;
     background-image:url(../images/musicsite.png);
     background-position:left;
@@ -224,7 +216,7 @@ section.jumbotron{
     transition: all .2s linear;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
 }
-#site4{
+#techSite{
     margin-top:60px;
     background-image:url(../images/techsite.png);
     background-position:center;
@@ -258,7 +250,7 @@ section.jumbotron{
 
 
 footer{
-    height:375px;
+    height:390px;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -287,6 +279,20 @@ input{
     width:36%;
     background:none;
 }
+
+#socialMedia{
+    float:right;
+    margin-right:35px;
+    margin-top:-65px;
+}
+
+#socialMedia ul li{
+    list-style: none;
+    float:right;
+    margin-right:20px;
+    font-size:3vw;
+}
+
 
 
                 /******** DESKTOP SITE *********/
@@ -383,6 +389,7 @@ nav #mobileLinks{
     list-style: none;
     margin-left:3%;
     font-size:4vw;
+    margin-top: 35px;
 }
 
 section.jumbotron{
@@ -499,22 +506,6 @@ section.jumbotron{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-#sampleBox #desktop{
-    display:none;
-}
-
-#sampleBox #mobile{
-    margin:0;
-    padding-top:10px;
-    font-size:5vw;
-    text-align: left;
-    border:1px solid black;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    background-color:rgba(0, 0, 0, 0.5);
-    color:rgba(0, 0, 0, 0.5);
-    letter-spacing: 6px;
-}
-
 .hoverBig{
      border-top:1px solid rgba(0, 0, 0, 0.5); 
 }
@@ -524,8 +515,8 @@ section.jumbotron{
     border-bottom:1px solid rgba(0, 0, 0, 0.5);
 }
 
-#site1{
-    margin-top:5px;
+#foodSite{
+    margin-top:35px;
     background-image:url(../images/foodsite.png);
     background-position:top;
     background-size:cover;
@@ -534,7 +525,7 @@ section.jumbotron{
     transition:all .5s linear;
 }
 
-#site2{
+#pictureSite{
     margin-top:5px;
     background-image:url(../images/picturesite.png);
     background-position:top;
@@ -543,7 +534,7 @@ section.jumbotron{
     width:100%;
 }
 
-#site3{
+#musicSite{
     margin-top:10px;
     background-image:url(../images/musicsite.png);
     background-position:right;
@@ -551,7 +542,7 @@ section.jumbotron{
     height:175px;
     width:100%;
 }
-#site4{
+#techSite{
     margin-top:10px;
     background-image:url(../images/techsite.png);
     background-position:right;

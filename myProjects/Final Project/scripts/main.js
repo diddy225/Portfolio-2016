@@ -3,7 +3,6 @@
 
 $(document).ready(function(){
     $("#dropDown").on('click', windowSlideDown);
-    $(window).on("swipe", unhideHeader);
 
 }); 
 
@@ -18,13 +17,3 @@ function windowSlideDown(){
     }
     isOpen = !isOpen;
 };
-
-
-function unhideHeader(){
-    if ($(window).scrollTop() < 950){
-        $('#site1').css('margin-top', '-63px');
-    }
-    else {
-        $('#site1').css('margin-top', '4px');
-    }
-}

@@ -5,7 +5,7 @@
     <title>Matthew Carpenter</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!--my spinning logo-->
@@ -24,18 +24,18 @@
                 </ul>
             </a>
             <ul id="links">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Resume</li></a>
-                <a href="#"><li>Skills</li></a>
-                <a href="#"><li>Projects</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a id="selected" href="#"><li>Home</li></a>
+                <!--<a href="#"><li>Resume</li></a>-->
+                <a href="#skillAnchor"><li>Skills</li></a>
+                <a href="#sampleBox"><li>Projects</li></a>
+                <a href="#myPicture"><li>Contact</li></a>
             </ul>
             <ul id="mobileLinks">
                 <a href="#"><li>Home</li></a>
-                <a href="#"><li>Resume</li></a>
-                <a href="#"><li>Skills</li></a>
-                <a href="#"><li>Projects</li></a>
-                <a href="#"><li>Contact</li></a>
+                <!--<a href="#"><li>Resume</li></a>-->
+                <a href="#skillAnchor"><li>Skills</li></a>
+                <a href="#sampleBox"><li>Projects</li></a>
+                <a href="#myPicture"><li>Contact</li></a>
             </ul>
         </nav>
         </nav>
@@ -43,7 +43,7 @@
 
     <section class="jumbotron"></section>
     
-    <section class="skill container">
+    <section id="skillAnchor" class="skill container">
         <p class="designBox"><span id="bigger">DEVELOPER.<br/>DESIGNER.</span><br/><br/>Hello, my name is Matthew Carpenter I currently reside in Atlanta, Ga,
         and I am a recent graduate of General Assembly (GA). GA taught me the skills needed to become a highly effective Front End Web Developer.
         My skills include HTML, CSS, JavaScript and jQurery. Some of the tools I use include GIT, Responsive Design, and Firebase. I am a husband
@@ -66,12 +66,10 @@
     </section>
     <section class="sampleSites">
         <div id="sampleBox">
-            <h2 id="desktop">PROJECTS</h2>
-            <h2 id="mobile">PROJECTS</h2>
-            <div id="site1" class="hoverBig"></div>
-            <div id="site2" class="hoverBig"></div>
-            <div id="site3" class="hoverBig"></div>
-            <div id="site4" class="hoverBig"></div>
+            <a id="foodSite" class="hoverBig" href="foodsite.html"></a>
+            <a id="pictureSite" class="hoverBig" href="picturesite.html"></a>
+            <a id="musicSite" class="hoverBig" href="musicsite.html"></a>
+            <a id="techSite"  class="hoverBig" href="techsite.html"></a>
         </div>
     </section>
     <footer>
@@ -84,7 +82,14 @@
             <textarea name="comment" id="commentBox" form="usrform" cols="30" rows="10" placeholder="Comment"></textarea>
         </form>
         <div id="socialMedia">
-            
+            <ul>
+                <a href=""><li><i class="fa fa-facebook-official" aria-hidden="true"></i></li></a>
+                <a href=""><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+                <a href=""><li><i class="fa fa-twitter-square" aria-hidden="true"></i></li></a>
+                <a href=""><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+                <a href=""><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
+                <a href=""><li><i class="fa fa-slack" aria-hidden="true"></i></li></a>
+            </ul>
         </div>
     </footer>
     <script src="scripts/jquery-3.1.0.min.js"></script>
