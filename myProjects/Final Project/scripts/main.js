@@ -3,7 +3,6 @@
 
 $(document).ready(function(){
     $("#dropDown").on('click', windowSlideDown);
-    $('form').parsley(options);
 
 }); 
 
