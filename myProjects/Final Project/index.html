@@ -5,6 +5,8 @@
     <title>Matthew Carpenter</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/morphext.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -31,12 +33,13 @@
                 <a href="#myPicture"><li>Contact</li></a>
             </ul>
             <ul id="mobileLinks">
-                <a href="#"><li>Home</li></a>
+                <a id="selected" href="#"><li>Home</li></a>
                 <!--<a href="#"><li>Resume</li></a>-->
                 <a href="#skillAnchor"><li>Skills</li></a>
                 <a href="#sampleBox"><li>Projects</li></a>
                 <a href="#myPicture"><li>Contact</li></a>
             </ul>
+            <p id="phrase">Matthew Carpenter Sr.&nbsp; is,&nbsp;&nbsp;<span id="js-rotating">A FRONT END WEB DEVELOPER, DETERMINED, CREATIVE, SELF MOTIVATED, CONFIDENT, FUN</span>.</p>
         </nav>
         </nav>
     </header>
@@ -74,13 +77,15 @@
     </section>
     <footer>
         <div id="myPicture"></div>
-        <p id="comment">Let's get in touch!</p>    
-        <form action="" method="POST">
-            <input type="text" placeholder="Full Name"><br/>
-            <input type="email" placeholder="Enter Email"><br/>
-            <input type="tel" placeholder="Phone Number"><br/>
-            <textarea name="comment" id="commentBox" form="usrform" cols="30" rows="10" placeholder="Comment"></textarea>
+        <p id="comment">LET'S GET IN TOUCH!</p>    
+        <form action="" method="POST" data-parsley-ui-enabled="false">
+            <input type="text" placeholder="Full Name" required=""><br/>
+            <input type="email" placeholder="Enter Email" ><br/>
+            <input type="tel" minLength="10" placeholder="Phone Number" required="" data-parsley-type="number"><br/>
+            <textarea maxlength="100" name="comment" id="commentBox" form="usrform" cols="30" rows="10" placeholder="Comment"></textarea>
+            <button class="footBtn" type="submit">SUBMIT</button>
         </form>
+
         <div id="socialMedia">
             <ul>
                 <a href=""><li><i class="fa fa-facebook-official" aria-hidden="true"></i></li></a>
@@ -93,6 +98,8 @@
         </div>
     </footer>
     <script src="scripts/jquery-3.1.0.min.js"></script>
+    <script src="scripts/parsley.min.js"></script>
+    <script src="scripts/morphext.min.js"></script>
    <script src="scripts/main.js"></script>
 </body>
 </html>

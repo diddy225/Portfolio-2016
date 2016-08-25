@@ -3,6 +3,7 @@
 
 $(document).ready(function(){
     $("#dropDown").on('click', windowSlideDown);
+    $('form').parsley(options);
 
 }); 
 
@@ -17,3 +18,11 @@ function windowSlideDown(){
     }
     isOpen = !isOpen;
 };
+
+
+    $("#js-rotating").Morphext({
+        animation: "swing",
+        speed:3000,
+        complete: function () {
+                }
+            });

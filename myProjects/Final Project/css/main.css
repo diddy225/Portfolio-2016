@@ -1,8 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Bevan|Cormorant';
+
                     /******** DESKTOP SITE *********/
 body{
     padding:0;
     margin:0 auto;
     width:100%;
+    font-family: 'Cormorant', serif;
 }
 
 input:focus{
@@ -21,7 +24,7 @@ a {
 }
 nav{
     background-color:rgba(0, 0, 0, 0.5);
-    height:40px;
+    height:50px;
     width:100%;
     position:fixed; 
     z-index: 100000;
@@ -50,6 +53,15 @@ nav #mobileLinks{
     color:#f00;
 }
 
+#phrase{
+    float:right;
+    font-size:1.4vw;
+    color:#fff;
+    margin:-5px -75px 0 0;
+    width:50%;
+    letter-spacing: 2px;
+}
+
 section.jumbotron{
     background-image:url(../images/city.jpg);
     background-size: cover;
@@ -65,9 +77,11 @@ section.jumbotron{
 /* SPINNING LOGO */
 
 #rotate{
+  transition: all .2s linear;
+  font-family: 'Bevan', cursive;
   color:transparent;
   position:absolute;
-  left: 30%;
+  left: 23%;
   top: 97px;
   font-size: 28vw;
   -webkit-text-stroke: 5px rgba(0, 0, 0, 0.8);
@@ -126,11 +140,12 @@ section.jumbotron{
 
 .designBox{
     float:right;
-    margin-top:150px;
+    margin-top:80px;
     margin-right:10%;
     word-wrap: break-word;
     width:35%;
     line-height:170%;
+    font-size:1em;
 }
 
 #bigger{
@@ -152,6 +167,7 @@ section.jumbotron{
 }
 
 #threeWordLogo h1{ 
+    transition: all .5s linear;
     color:rgba(0, 0, 0, 0.5);
     font-size:5.5em;
     list-style: none;
@@ -243,6 +259,354 @@ section.jumbotron{
 }   
 
 #comment{
+    color:#000;
+    margin: -28px 0 0 130px;
+    font-size:2em;
+}
+
+
+footer{
+    height:440px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+form{
+    margin-left: 50px;
+}
+
+
+input:first-child{
+    margin-top:40px;
+}
+
+#commentBox{
+    border-radius:3px;
+    width:36%;
+    height:125px;
+    border:1px solid #fff;
+    color:#000;
+}
+
+input{
+    color:white;
+    border:none;
+    border-bottom:2px solid #fff;
+    margin-bottom:20px;
+    width:36%;
+    background:none;
+}
+
+.footBtn{
+    padding:10px;
+    position:relative;
+    bottom:-40px;
+    right:270px;
+    padding:5px 100px 5px 100px;
+    border-radius:10px;
+    color:red;
+    background-color:rgba(0, 0, 0, 0.4);
+    border:none;
+}
+
+#socialMedia{
+    float:right;
+    margin-right:35px;
+    margin-top:-30px;
+}
+
+#socialMedia ul li{
+    list-style: none;
+    float:right;
+    margin-right:20px;
+    font-size:3vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+                /******** RESPONSIVE DESKTOP SITE *********/
+
+
+@media (max-width:815px) {
+
+input:focus{
+    outline:none;
+}
+
+textarea:focus{
+    outline:none;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    letter-spacing: 2px;
+}
+
+
+#hamburger {
+    display:unset;
+    list-style: none;
+    font-size:35px;
+    position:relative;
+    width:0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 44%;
+    margin-top: 3%;
+}
+
+#hamburger li{
+    transform: rotate(90deg);
+    margin-top: -30px;
+}
+
+nav{
+    background-color:rgba(0, 0, 0, 0.5);
+    height:60px;
+    width:100%;
+    position:fixed;
+    z-index: 10000;
+    transition:all 1s;
+}
+
+.expandNav{
+    transition:all .1s;
+    height:500px;
+}
+
+
+nav ul{
+    display:flex;
+    flex-direction: column;
+    margin-left:44%;
+    margin-top:-44px;
+}
+
+#links li{   /* hidden desktop links */
+    display:none;
+}
+
+nav #mobileLinks{
+    text-align: center;
+    display:unset;
+}
+
+#mobileLinks li{
+   visibility: hidden;
+}
+
+#mobileLinks li{
+    letter-spacing: 20px;
+    list-style: none;
+    margin-left:3%;
+    font-size:4vw;
+    margin-top: 35px;
+}
+
+#mobileLinks a:hover{
+    color:#f00;
+}
+
+#mobileLinks #selected{
+    color:#f00;
+}
+
+#phrase{
+    position:fixed;
+    top:20px;
+    right:77%;
+    float:right;
+    font-size:.7em;
+    color:#fff;
+    width:30%;
+}
+
+section.jumbotron{
+    background-image:url(../images/city.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:750px;
+}
+
+/* SPINNING LOGO */
+
+#circle{
+    display:none;
+}
+
+/* SPINNING LOGO END*/
+
+/* SKILL BOXES*/
+
+.skill{
+    overflow: hidden;
+    letter-spacing: 2px;
+    text-align: leftj;
+    height:650px;
+}
+
+.skillsBox{ 
+    margin-top:100px;
+    margin-left:50px;
+    transition:all .5s linear;
+}
+
+#HTML{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/html5.png);
+    height: 140px;
+    width: 134px;
+}
+
+#javascript{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/jslogo.png);
+    height: 200px;
+    width: 135px;
+}
+
+#CSS{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/css3.png);
+    height: 155px;
+    width: 130px;
+
+}
+
+.designBox{
+    float:right;
+    margin-top:120px;
+    margin-right:5%;
+    word-wrap: break-word;
+    width:50%;
+    line-height:160%;
+    transition:all .5s linear;
+}
+
+#bigger{
+    font-size:2.0em;
+}
+
+
+/* END SKILL BOXES*/
+
+/* JUST A BACKGROUND*/
+
+.spacer-background{
+    background-image: url(../images/laptop.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat:no-repeat;
+    height:600px;
+    overflow:hidden;
+}
+
+#threeWordLogo h1{ 
+    color:rgba(0, 0, 0, 0.4);
+    font-size:5.5em;
+    list-style: none;
+    text-align: center;
+}
+
+#threeWordLogo h1:nth-child(2){
+    margin-left:0px;
+}
+
+#threeWordLogo h1:last-child{
+    margin-left:0px;
+}
+/* JUST A BACKGROUND END*/
+
+/* SAMPLE SITES*/
+.sampleSites{
+    height:800px;
+}
+
+#sampleBox{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hoverBig{
+     border-top:1px solid rgba(0, 0, 0, 0.5); 
+}
+
+.hoverBig:first-child{
+    border:none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.5);
+}
+
+#foodSite{
+    margin-top:35px;
+    background-image:url(../images/foodsite.png);
+    background-position:top;
+    background-size:cover;
+    height:175px;
+    width:100%;
+    transition:all .5s linear;
+}
+
+#pictureSite{
+    margin-top:5px;
+    background-image:url(../images/picturesite.png);
+    background-position:top;
+    background-size:cover;
+    height:175px;
+    width:100%;
+}
+
+#musicSite{
+    margin-top:10px;
+    background-image:url(../images/musicsite.png);
+    background-position:right;
+    background-size:cover;
+    height:175px;
+    width:100%;
+}
+#techSite{
+    margin-top:10px;
+    background-image:url(../images/techsite.png);
+    background-position:right;
+    background-size:cover;
+    height:175px;
+    width:100%;
+}
+
+/* SAMPLE SITE END */
+
+/* FOOTER */
+#myPicture{
+    background-image: url(../images/me.JPG);
+    background-position:center;
+    background-size: cover;
+    height:60px;
+    border-radius:60px;
+    width:60px;
+    position:relative;
+    left:60px;
+    top:20px;
+}   
+
+#comment{
     color:#fff;
     margin: -28px 0 0 130px;
     font-size:2em;
@@ -250,7 +614,7 @@ section.jumbotron{
 
 
 footer{
-    height:390px;
+    height:420px;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -272,34 +636,30 @@ input:first-child{
 }
 
 input{
-    color:white;
+    color:#000;
     border:none;
     border-bottom:2px solid #fff;
-    margin-bottom:20px;
+    margin-bottom:15px;
     width:36%;
     background:none;
+    background-color: transparent;
 }
 
-#socialMedia{
-    float:right;
-    margin-right:35px;
-    margin-top:-65px;
+.footBtn{
+    padding:10px;
+    position:relative;
+    bottom:-30px;
+    right:185px;
+    padding:5px 60px 5px 60px;
+    border-radius:10px;
+    color:red;
+    background-color:rgba(0, 0, 0, 0.4);
+    border:none;
 }
 
-#socialMedia ul li{
-    list-style: none;
-    float:right;
-    margin-right:20px;
-    font-size:3vw;
-}
+    }
 
-
-
-                /******** DESKTOP SITE *********/
-
-
-
-
+                /******** RESPONSIVE DESKTOP SITE END *********/
 
 
 
@@ -390,6 +750,16 @@ nav #mobileLinks{
     margin-left:3%;
     font-size:4vw;
     margin-top: 35px;
+}
+
+#phrase{
+    position:relative;
+    top:-420px;
+    right:59%;
+    float:right;
+    font-size:.9em;
+    color:#fff;
+    width:50%;
 }
 
 section.jumbotron{
@@ -574,7 +944,7 @@ section.jumbotron{
 
 
 footer{
-    height:380px;
+    height:420px;
     background-color:rgba(0, 0, 0, 0.5);
 }
 
@@ -603,5 +973,17 @@ input{
     width:36%;
     background:none;
     background-color: transparent;
+}
+
+.footBtn{
+    padding:10px;
+    position:relative;
+    bottom:-30px;
+    right:185px;
+    padding:5px 60px 5px 60px;
+    border-radius:10px;
+    color:red;
+    background-color:rgba(0, 0, 0, 0.4);
+    border:none;
 }
     }
