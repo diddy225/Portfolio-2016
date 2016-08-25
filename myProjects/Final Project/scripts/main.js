@@ -3,7 +3,7 @@
 
 $(document).ready(function(){
     $("#dropDown").on('click', windowSlideDown);
-    $(window).on('scroll', unhideHeader);
+    $(window).on("swipe", unhideHeader);
 
 }); 
 

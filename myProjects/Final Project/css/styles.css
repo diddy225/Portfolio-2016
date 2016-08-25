@@ -176,7 +176,20 @@ section.jumbotron{
 .hoverBig:hover{
      z-index: 20000;
      width:100%;
-     transform: scale(1.0);  
+     transform: scale(1.05);  
+}
+#sampleBox #mobile{
+    display:none;
+}
+
+#sampleBox #desktop{
+    position:relative;
+    transform: rotate(270deg);
+    height:0;
+    font-size:5vw;
+    margin: 272px 0 0 -179px;
+    color:rgba(0, 0, 0, 0.5);
+    letter-spacing: 6px;
 }
 
 #site1{
@@ -486,7 +499,11 @@ section.jumbotron{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-#sampleBox h2{
+#sampleBox #desktop{
+    display:none;
+}
+
+#sampleBox #mobile{
     margin:0;
     padding-top:10px;
     font-size:5vw;
@@ -495,6 +512,7 @@ section.jumbotron{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     background-color:rgba(0, 0, 0, 0.5);
     color:rgba(0, 0, 0, 0.5);
+    letter-spacing: 6px;
 }
 
 .hoverBig{
