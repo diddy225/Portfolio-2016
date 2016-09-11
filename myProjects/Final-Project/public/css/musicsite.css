@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron{
+  background-image:url('https://s3.amazonaws.com/codecademy-content/projects/bass/bg.jpg');
+  height:620px;
+  background-size:cover;
+  background-repeat:no-repeat;
+	background-color:transparent;
+  margin: 0 0 0 0;
+}
+
+.col-md-7{
+  margin:50px 0 0 40px;
+  color:white;
+}
+
+.col-md-7 p{
+  font-size:22px;
+}
+
+.col-md-3{
+  float:left;
+}
+
+.header-links{
+  margin: 40px 0 0 0;
+}
+
+.header-links li{
+  display:inline;
+  margin-right:15px;
+}
+
+.col-md-9{
+  text-align:right;
+  float:right;
+}
+
+.features a{
+  color:white;
+  font-size:15px;
+  font-weight:bold;
+}
+
+#download a{
+	text-decoration:none;
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+}
+
+#download a:hover{
+	color:#333333;
+}
+
+#download{
+  border:0;
+  background-color:#FF003D;
+  padding:8px 25px;
+  border-radius:0;
+}
+
+.supporting-1{
+  background-color:#161718;
+  color:white;
+  height:400px;
+}
+
+.supporting-1 img{
+  margin-left:33%;
+  margin-top:45px;
+}
+
+.section-1-header{
+  margin-right:33%;
+  margin-top:80px;
+}
+
+.section-1-subheader{
+  margin-right:33%;
+}
+
+.supporting-2{
+  background-color:#000000;
+  color:white;
+  height:400px;
+}
+
+.supporting-2 img{
+  margin-right:33%;
+  margin-top:45px;
+}
+
+.section-2-header{
+  margin-left:33%;
+  margin-top:80px;
+}
+
+.section-2-subheader{
+  margin-left:33%;
+}
+
+.supporting-3{
+  background-color:#161718;
+  color:white;
+  height:400px;
+}
+
+.supporting-3 img{
+  margin-left:33%;
+  margin-top:45px;
+}
+
+.section-3-header{
+  margin-right:33%;
+  margin-top:80px;
+}
+
+.section-3-subheader{
+  margin-right:33%;
+}
+
+.supporting-4{
+  background-image:url(https://s3.amazonaws.com/codecademy-content/projects/bass/feature.jpg);
+  height:400px;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.container{
+  text-align:center;
+  color:white;
+}
+
+.container h1{
+  margin-top:125px;
+}
+
+.footer{
+  background-color:black;
+}
+
+.footer-list{
+  list-style:none;
+}
+
+.footer-list li{
+  margin-top:10px;
+  margin-right:20px;
+}
+
+.footer-list li h3{
+  font-size:14px;
+  margin-top:15px;
+}
+
+.footer-list li a{
+    color:#aaa;
+  	font-size:12px;
+}
+
+
+
