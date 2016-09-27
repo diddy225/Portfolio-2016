@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Game Collection</title>
+    <link rel="stylesheet" type="text/css"" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">View Collection</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main">
+        <h1>My Video Game Collection</h1>
+        <form action="" id="form">
+            <label for="log">Add new title:</label><br/>
+            <input type="text" id="log" placeholder="Enter Title" value="">
+            <button id="sbtBtn" onclick="addTitle();">ADD TITLE</button>
+        </form>
+    </section>
+
+    <section>
+        <div id="added-title"></div>
+        <div id="list"></div>
+    </section>
+    
+<script src="scripts/log.js"></script>    
+<script src="scripts/main.js"></script>
+</body>
+</html>
